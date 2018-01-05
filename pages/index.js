@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react'
+import ReactGA from 'react-ga'
 import Head from 'next/head'
+
 import NavBar from '../components/navbar/NavBar'
 import SideNav from '../components/sidenav/SideNav'
 
@@ -12,6 +14,10 @@ export default class Home extends Component {
     })
 
     $('.scrollspy').scrollSpy()
+
+    ReactGA.initialize('UA-111998172-1');
+    ReactGA.set({ page: window.location.pathname })
+    ReactGA.pageview(window.location.pathname)
   }
 
   render() {
