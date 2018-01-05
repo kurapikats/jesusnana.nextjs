@@ -1,0 +1,23 @@
+{
+  "name": "jesusnana.ml",
+  "version": "1.0.0",
+  "description": "Onin's official SPA implemented in next.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurapikats/jesusnana.nextjs.git"
+  },
+  "keywords": [
+    "jesus",
+    "nana"
+  ],
+  "author": "Jesus B. Nana <jesus.nana@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kurapikats/jesusnana.nextjs/issues"
+  },
+  "homepage": "https://github.com/kurapikats/jesusnana.nextjs#readme"
+}
