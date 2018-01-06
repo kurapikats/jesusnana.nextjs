@@ -15,7 +15,9 @@ export default class Home extends Component {
 
     $('.scrollspy').scrollSpy()
 
-    ReactGA.initialize('UA-111998172-1');
+    $('.collapsible').collapsible()
+
+    ReactGA.initialize('UA-111998172-1')
     ReactGA.set({ page: window.location.pathname })
     ReactGA.pageview(window.location.pathname)
   }
@@ -53,7 +55,7 @@ export default class Home extends Component {
           <ul className="browser-default">
             <li><strong>Job Titles</strong>
               <ul className="browser-default">
-                <li>Business App Programmer, Web Developer, Android App Developer, iOS App Developer, Mobile App Developer, Backend Developer, Frontend Developer, Web Master, Software Programmer, Computer Programmer</li>
+                <li>Business App Programmer, Web Developer, Android App Developer, iOS App Developer, Mobile App Developer, Backend Developer, Frontend Developer, Web Master, Software Engineer, Computer Programmer</li>
               </ul>
             </li>
 
@@ -102,102 +104,185 @@ export default class Home extends Component {
             </li>
           </ul>
 
-          <h4 id="company-work" className="section scrollspy">Company Work &amp; Responsibilities</h4>
-          <ul className="browser-default">
-            <li><strong>PrimaCard Philippines (2017)</strong>
-              <ul className="browser-default">
-                <li>Planned and designed the whole system for PrimaCard Platform</li>
-                <li>Developed backend payment API system in Amazon Web Services</li>
-                <li>Developed Two-factor One-Time Password (OTP) Token authentication method</li>
-                <li>Integrated with third party SMS provider for customer notification system</li>
-                <li>Integrated Quick Response (QR) Code scanning system</li>
-                <li>Integrated Near-Field Communication (NFC) Card ID detection system</li>
-                <li>Integrated Keycloak Access Management System on API endpoints</li>
-                <li>Developed Android App for clients and supervisor</li>
-                <li>Developed WebTools for Clients and System Administrators</li>
-                <li>Planned and designed DiscountKiosk platform</li>
-              </ul>
+          <h4 id="work-experiences" className="section scrollspy">Work Experiences</h4>
+          <ul className="collapsible" data-collapsible="expandable">
+
+            <li>
+              <div className="collapsible-header">
+                <div className="col s9">
+                  <strong>PrimaCard Philippines - Senior Software Engineer</strong>
+                </div>
+                <div className="col s3 right-align">[ 2017 ]</div>
+              </div>
+
+              <div className="collapsible-body">
+                <ul className="browser-default">
+                  <li>Planned and designed the whole system for PrimaCard Platform</li>
+                  <li>Developed backend payment API system in Amazon Web Services</li>
+                  <li>Developed Two-factor One-Time Password (OTP) Token authentication method</li>
+                  <li>Integrated with third party SMS provider for customer notification system</li>
+                  <li>Integrated Quick Response (QR) Code scanning system</li>
+                  <li>Integrated Near-Field Communication (NFC) Card ID detection system</li>
+                  <li>Integrated Keycloak Access Management System on API endpoints</li>
+                  <li>Developed Android App for clients and supervisor</li>
+                  <li>Developed WebTools for Clients and System Administrators</li>
+                  <li>Planned and designed DiscountKiosk platform</li>
+                </ul>
+              </div>
             </li>
 
-            <li><strong>Metrobank Philippines (2016)</strong>
-              <ul className="browser-default">
-                <li>Developed “Insights” Content Management System</li>
-              </ul>
+            <li>
+              <div className="collapsible-header">
+                <div className="col s9">
+                  <strong>Metrobank Philippines - Senior Software Developer</strong>
+                </div>
+                <div className="col s3 right-align">[ 2016 ]</div>
+              </div>
+              <div className="collapsible-body">
+                <ul className="browser-default">
+                  <li>Developed Internal Content Management System called "Insights"</li>
+                </ul>
+              </div>
             </li>
 
-            <li><strong>AdGent Digital (2010 - 2015)</strong>
-              <ul className="browser-default">
-                <li>Developed Internal Content Management System</li>
-                <li>Developed and maintain company website adgentdigital.com</li>
-                <li>Developed Video Overlay Ad Manager / Player</li>
-                <li>Developed HTML5 Ad Manager / Viewer</li>
-                <li>Developed VAST/VPAID Player</li>
-                <li>Developed HTML5 AdTouch Advertisements for clients</li>
-                <li>Developed AdTouch Framework - Ad management and monitoring tool</li>
-                <li>Developed custom mass mailer notification system</li>
-              </ul>
+            <li>
+              <div className="collapsible-header">
+                <div className="col s9">
+                  <strong>AdGent Digital - Senior Software Developer</strong>
+                </div>
+                <div className="col s3 right-align">[ 2010 - 2015 ]</div>
+              </div>
+              <div className="collapsible-body">
+                <ul className="browser-default">
+                  <li>Developed Internal Content Management System</li>
+                  <li>Developed and maintain company website adgentdigital.com</li>
+                  <li>Developed Video Overlay Ad Manager / Player</li>
+                  <li>Developed HTML5 Ad Manager / Viewer</li>
+                  <li>Developed VAST/VPAID Player</li>
+                  <li>Developed HTML5 AdTouch Advertisements for clients</li>
+                  <li>Developed AdTouch Framework - Ad management and monitoring tool</li>
+                  <li>Developed custom mass mailer notification system</li>
+                </ul>
+              </div>
             </li>
 
-            <li><strong>Modelworks Philippines (2009 - 2010)</strong>
-              <ul className="browser-default">
-                <li>Converted backend of WarPlanes.com from ASP to PHP</li>
-                <li>Developed custom mass mailer notification system</li>
-              </ul>
+            <li>
+              <div className="collapsible-header">
+                <div className="col s9">
+                  <strong>ModelWorks Philippines - Senior Full-Stack Developer</strong>
+                </div>
+                <div className="col s3 right-align">[ 2009 - 2010 ]</div>
+              </div>
+              <div className="collapsible-body">
+                <ul className="browser-default">
+                  <li>Converted backend of WarPlanes.com from ASP to PHP</li>
+                  <li>Developed custom mass mailer notification system</li>
+                </ul>
+              </div>
             </li>
 
-            <li><strong>Gameloft Philippines (2009)</strong>
-              <ul className="browser-default">
-                <li>Developed in-house Time Attendance System</li>
-                <li>Bug fixing of existing internal office tools</li>
-              </ul>
+            <li>
+              <div className="collapsible-header">
+                <div className="col s9">
+                  <strong>Gameloft Philippines - Senior PHP Developer</strong>
+                </div>
+                <div className="col s3 right-align">[ 2009 ]</div>
+              </div>
+              <div className="collapsible-body">
+                <ul className="browser-default">
+                  <li>Developed in-house Time Attendance System</li>
+                  <li>Bug fixing of existing internal office tools</li>
+                </ul>
+              </div>
             </li>
 
-            <li><strong>AmPhil Technologies Inc. (2009)</strong>
-              <ul className="browser-default">
-                <li>Developed CMS for Drag Racing Social Networking dragfools.com</li>
-                <li>Developed Personalized Legal Services Online LawFirmAtHome.com</li>
-                <li>Data mining and site scraping</li>
-                <li>Maintenance of Company website amphiltech.com</li>
-              </ul>
+            <li>
+              <div className="collapsible-header">
+                <div className="col s9">
+                  <strong>AmPhil Technologies Inc. - Senior Web Developer</strong>
+                </div>
+                <div className="col s3 right-align">[ 2009 ]</div>
+              </div>
+              <div className="collapsible-body">
+                <ul className="browser-default">
+                  <li>Developed CMS for Drag Racing Social Networking DragFools.com</li>
+                  <li>Developed Personalized Legal Services Online LawFirmAtHome.com</li>
+                  <li>Data mining and site scraping</li>
+                  <li>Maintenance of Company website amphiltech.com</li>
+                </ul>
+              </div>
             </li>
 
-            <li><strong>Monark Customs Brokerage (2008 - 2009)</strong>
-              <ul className="browser-default">
-                <li>Developed BalikBayanBox Tracking System</li>
-                <li>Created custom mass mailer notification system</li>
-                <li>Created Company website monarkworldwide.com</li>
-              </ul>
+            <li>
+              <div className="collapsible-header">
+                <div className="col s9">
+                  <strong>Monark Customs Brokerage - Lead Web Developer</strong>
+                </div>
+                <div className="col s3 right-align">[ 2008 - 2009 ]</div>
+              </div>
+              <div className="collapsible-body">
+                <ul className="browser-default">
+                  <li>Developed BalikBayanBox Tracking System</li>
+                  <li>Created custom mass mailer notification system</li>
+                  <li>Created Company website monarkworldwide.com</li>
+                </ul>
+              </div>
             </li>
 
-            <li><strong>Digital Media Exchange (2006 - 2008)</strong>
-              <ul className="browser-default">
-                <li>Planned, designed and developed Customer Relationship Management System</li>
-                <li>Converted Photoshop PSD files to HTML to create static web pages</li>
-                <li>Optimized Images for websites</li>
-                <li>Integrated third party SMS provider to our custom notification systems</li>
-                <li>Integrated Paypal payment system to mobiusonline.net e-Pin store</li>
-                <li>Developed CMS for company and game websites – dmii.net, muonline.ph, gunbound.ph, mobiuskids.net, mobiusgames.net, mobiusonline.net</li>
-                <li>Developed Java app - Café of Choice (COC) IP Updater</li>
-              </ul>
+            <li>
+              <div className="collapsible-header">
+                <div className="col s9">
+                  <strong>Digital Media Exchange - Web Developer</strong>
+                </div>
+                <div className="col s3 right-align">[ 2006 - 2008 ]</div>
+              </div>
+              <div className="collapsible-body">
+                <ul className="browser-default">
+                  <li>Planned, designed and developed Customer Relationship Management System</li>
+                  <li>Converted Photoshop PSD files to HTML to create static web pages</li>
+                  <li>Optimized Images for websites</li>
+                  <li>Integrated third party SMS provider to our custom notification systems</li>
+                  <li>Integrated Paypal payment system to mobiusonline.net e-Pin store</li>
+                  <li>Developed CMS for company and game websites – dmii.net, muonline.ph, gunbound.ph, mobiuskids.net, mobiusgames.net, mobiusonline.net</li>
+                  <li>Developed Java app - Café of Choice (COC) IP Updater</li>
+                </ul>
+              </div>
             </li>
 
-            <li><strong>University of the Philippines Manila (2004 - 2006)</strong>
-              <ul className="browser-default">
-                <li>Participated in the development of CRS/SRS Online Enrollment System</li>
-                <li>Created database migration scripts for DB2 Databases to PostgreSQL</li>
-                <li>Created custom mass mailer notification system</li>
-                <li>Update and maintain UPM official website</li>
-              </ul>
+            <li>
+              <div className="collapsible-header">
+                <div className="col s9">
+                  <strong>University of the Philippines - Junior Web Developer</strong>
+                </div>
+                <div className="col s3 right-align">[ 2004 - 2006 ]</div>
+              </div>
+              <div className="collapsible-body">
+                <ul className="browser-default">
+                  <li>Participated in the development of CRS/SRS Online Enrollment System</li>
+                  <li>Created database migration scripts for DB2 Databases to PostgreSQL</li>
+                  <li>Created custom mass mailer notification system</li>
+                  <li>Update and maintain UPM official website</li>
+                </ul>
+              </div>
             </li>
 
-            <li><strong>Micro Computer Leader (MCL) Distributors Inc. (2000 - 2004)</strong>
-              <ul className="browser-default">
-                <li>Troubleshoot Network and Internet connection problem</li>
-                <li>Hardware, OS Software Installation, Microsoft Office, Adobe Products, etc.</li>
-                <li>Linux Server Installation, configuration and management</li>
-                <li>Hardware and Software maintenance</li>
-              </ul>
+            <li>
+              <div className="collapsible-header">
+                <div className="col s9">
+                  <strong>Micro Computer Leader Distributors Inc. - Technical Support Engineer</strong>
+                </div>
+                <div className="col s3 right-align">[ 2000 - 2004 ]</div>
+              </div>
+              <div className="collapsible-body">
+                <ul className="browser-default">
+                  <li>Troubleshoot Network and Internet connection problem</li>
+                  <li>Hardware, OS Software Installation, Microsoft Office, Adobe Products, etc.</li>
+                  <li>Linux Server Installation, configuration and management</li>
+                  <li>Hardware and Software maintenance</li>
+                </ul>
+              </div>
             </li>
+
           </ul>
 
           <h4 id="software-development" className="section scrollspy">Software Development Expertise</h4>
@@ -214,72 +299,6 @@ export default class Home extends Component {
             <li>Manage Domains and Linux Web Servers</li>
             <li>Convert PSD files to HTML, image optimizations for Web</li>
           </ul>
-
-          <h4 id="work-experiences" className="section scrollspy">Work Experiences</h4>
-          <table className="bordered striped highlight">
-            <tbody>
-              <tr>
-                <td>Mar 2016 – Aug 2016</td>
-                <td>Metrobank Philippines</td>
-                <td className="hide-on-small-only">Makati Ave., Makati</td>
-                <td><em><strong>Senior Software Developer</strong></em></td>
-              </tr>
-              <tr>
-                <td>Sep 2010 – Mar 2015</td>
-                <td>AdGent Digital Inc.</td>
-                <td className="hide-on-small-only">Ayala, Makati</td>
-                <td><em><strong>Senior Software Developer</strong></em></td>
-              </tr>
-              <tr>
-                <td>Mar 2016 – Aug 2016</td>
-                <td>Metrobank Philippines</td>
-                <td className="hide-on-small-only">Makati Ave., Makati</td>
-                <td><em><strong>Senior Software Developer</strong></em></td>
-              </tr>
-              <tr>
-                <td>Sep 2009 – Sep 2010</td>
-                <td>ModelWorks Philippines</td>
-                <td className="hide-on-small-only">Pasong Tamo, Makati</td>
-                <td><em><strong>Senior Full-Stack Developer</strong></em></td>
-              </tr>
-              <tr>
-                <td>Mar 2009 – Sep 2009</td>
-                <td>Gameloft Philippines</td>
-                <td className="hide-on-small-only">Buendia, Makati</td>
-                <td><em><strong>Senior PHP Developer</strong></em></td>
-              </tr>
-              <tr>
-                <td>Feb 2009 – Sep 2009</td>
-                <td>AmPhil Tech Inc.</td>
-                <td className="hide-on-small-only">AFOVAI, Taguig</td>
-                <td><em><strong>Senior Web Developer</strong></em></td>
-              </tr>
-              <tr>
-                <td>Feb 2008 – Feb 2009</td>
-                <td>Monark Customs Brokerage</td>
-                <td className="hide-on-small-only">BF Homes, Paraňaque</td>
-                <td><em><strong>Lead Web Developer</strong></em></td>
-              </tr>
-              <tr>
-                <td>Feb 2006 – Feb 2008</td>
-                <td>Digital Media Exchange (Mobius)</td>
-                <td className="hide-on-small-only">Fort Bonifacio, Taguig</td>
-                <td><em><strong>Web Developer</strong></em></td>
-              </tr>
-              <tr>
-                <td>Mar 2004 – Jan 2006</td>
-                <td>University of the Philippines</td>
-                <td className="hide-on-small-only">Ermita, Manila</td>
-                <td><em><strong>Junior Web Developer</strong></em></td>
-              </tr>
-              <tr>
-                <td>Dec 2000 – Jan 2004</td>
-                <td>MCL Distributors Inc.</td>
-                <td className="hide-on-small-only">San Antonio, Makati</td>
-                <td><em><strong>Technical Support Engineer</strong></em></td>
-              </tr>
-            </tbody>
-          </table>
 
           <h4 id="certifications" className="section scrollspy">Certifications</h4>
           <table className="bordered centered highlight responsive-table">
@@ -407,9 +426,10 @@ export default class Home extends Component {
             <span className="brown-text">+63 908 215 0659</span>
           </div>
 
-          <p className="right" style={{ fontSize: 14 }}>Last update: Jan 5, 2018</p>
-
-          <p className="center">* * *<br /></p>
+          <p className="center">* * *</p>
+          <p className="right" style={{ fontSize: 14 }}>Last update: Jan 6, 2018</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
 
           <div className="fixed-action-btn hide-on-med-and-down">
             <a href="#top" className="btn-floating btn-large brown accent-4 waves-effect">
