@@ -17,9 +17,26 @@ export default class Home extends Component {
 
     $('.collapsible').collapsible()
 
+    $('.chips').material_chip()
+
+    const scrollFireOptions = [
+      {selector: '#professional-attributes-ul', offset: 0, callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      }},
+      {selector: '#projects-collection', offset: 100, callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      }},
+      {selector: '#certifications-table', offset: 100, callback: function(el) {
+        Materialize.fadeInImage('#certifications-table img')
+      }}
+    ]
+    Materialize.scrollFire(scrollFireOptions)
+
     ReactGA.initialize('UA-111998172-1')
     ReactGA.set({ page: window.location.pathname })
     ReactGA.pageview(window.location.pathname)
+
+    Materialize.toast(`Hello Friend! Welcome to my webpage.‎`, 3500)
   }
 
   render() {
@@ -40,10 +57,10 @@ export default class Home extends Component {
       <NavBar />
       <SideNav />
 
-      <div className="row flow-text">
+      <div className="row">
         <div className="col s12">
-          <h4 id="professional-attributes" className="section scrollspy">Professional Attributes</h4>
-          <ul className="browser-default">
+          <h5 id="professional-attributes" className="section scrollspy">Professional Attributes</h5>
+          <ul id="professional-attributes-ul" className="browser-default">
             <li>Devoted learner; have insatiable appetite to gain and apply new knowledge.</li>
             <li>A high-energy, enthusiastic and dependable individual who excels in challenging and competitive environments.</li>
             <li>Proven ability to work independently, competent in setting priorities, handle simultaneous projects, and meet deadlines.</li>
@@ -51,27 +68,57 @@ export default class Home extends Component {
             <li>A loyal, team-spirited individual, able to effectively gain confidence of people.</li>
           </ul>
 
-          <h4 id="technical-skills" className="section scrollspy">Technical Skills</h4>
+          <h5 id="software-development" className="section scrollspy">Software Development Expertise</h5>
           <ul className="browser-default">
-            <li><strong>Job Titles</strong>
+
+            <li><strong>Job Titles</strong><br/>
+              <div class="chip">Business App Programmer</div>
+              <div class="chip">Web Developer</div>
+              <div class="chip">Android App Developer</div>
+              <div class="chip">iOS App Developer</div>
+              <div class="chip">Mobile App Developer</div>
+              <div class="chip">Backend Developer</div>
+              <div class="chip">Frontend Developer</div>
+              <div class="chip">Web Master</div>
+              <div class="chip">Software Engineer</div>
+              <div class="chip">Computer Programmer</div>
+            </li>
+
+            <li><strong>Things I can do</strong><br/>
               <ul className="browser-default">
-                <li>Business App Programmer, Web Developer, Android App Developer, iOS App Developer, Mobile App Developer, Backend Developer, Frontend Developer, Web Master, Software Engineer, Computer Programmer</li>
+                <li>Architecture Planning, Using Best Practices and Production Deployment</li>
+                <li>Integrate systems, internal and external applications to third party APIs</li>
+                <li>Design and develop scalable platform structures</li>
+                <li>Design database structures, horizontal system scaling</li>
+                <li>Create Isomorphic Applications</li>
+                <li>Real-time web application development</li>
+                <li>Native iOS and Android App Development</li>
+                <li>Hybrid Mobile App Development using Apache Cordova</li>
+                <li>Create tools and utilities to automate repetitive tasks</li>
+                <li>Manage Domains and Linux Web Servers</li>
+                <li>Convert PSD files to HTML, image optimizations for Web</li>
               </ul>
             </li>
 
-            <li><strong>Programming &amp; Scripting</strong>
-              <ul className="browser-default">
-                <li>Javascript (ES2015+), PHP, Java, Python, SQL</li>
-              </ul>
+            <li><strong>Programming &amp; Scripting</strong><br/>
+              <div class="chip">Javascript (ES2015+)</div>
+              <div class="chip">PHP</div>
+              <div class="chip">Java</div>
+              <div class="chip">Python</div>
+              <div class="chip">SQL</div>
             </li>
 
-            <li><strong>Methodologies</strong>
-              <ul className="browser-default">
-                <li>Functional, OOP, Design Patterns, UML, Waterfall, Agile, Scrum</li>
-              </ul>
+            <li><strong>Methodologies</strong><br/>
+              <div class="chip">Functional</div>
+              <div class="chip">OOP</div>
+              <div class="chip">Design Patterns</div>
+              <div class="chip">UML</div>
+              <div class="chip">Waterfall</div>
+              <div class="chip">Agile</div>
+              <div class="chip">Scrum</div>
             </li>
 
-            <li><strong>Tools &amp; Technologies</strong>
+            <li><strong>Frameworks, Libraries, Tools &amp; Technologies</strong>
               <ul className="browser-default">
                 <li>Redux, NativeScript, MeteorJs, MantraJs, ReactJs, Laravel, Twitter Bootstrap, JQuery, Drupal</li>
                 <li>Nginx, Apache, Lighttpd, SSH, XAMPP, Atom, Vim, VSCode, HTML5, Smarty, Material Design</li>
@@ -84,28 +131,30 @@ export default class Home extends Component {
               </ul>
             </li>
 
-            <li><strong>Operating Systems</strong>
-              <ul className="browser-default">
-                <li>Linux (Debian, Centos), FreeBSD, MSWindows, MacOSX</li>
-              </ul>
+            <li><strong>Operating Systems</strong><br/>
+              <div class="chip">Linux (Debian, Centos)</div>
+              <div class="chip">FreeBSD</div>
+              <div class="chip">MSWindows</div>
+              <div class="chip">MacOSX</div>
             </li>
 
-            <li><strong>Databases</strong>
-              <ul className="browser-default">
-                <li>MySQL, MariaDB, MongoDB, PostgreSQL</li>
-              </ul>
+            <li><strong>Databases</strong><br/>
+              <div class="chip">MySQL</div>
+              <div class="chip">MariaDB</div>
+              <div class="chip">MongoDB</div>
+              <div class="chip">PostgreSQL</div>
             </li>
 
-            <li><strong>Others</strong>
-              <ul className="browser-default">
-                <li>Hardware and software troubleshooting</li>
-                <li>Router, LAN Management</li>
-              </ul>
+            <li><strong>Others</strong><br/>
+              <div class="chip">Hardware Troubleshooting</div>
+              <div class="chip">Software Troubleshooting</div>
+              <div class="chip">Router</div>
+              <div class="chip">LAN Management</div>
             </li>
           </ul>
 
-          <h4 id="work-experiences" className="section scrollspy">Work Experiences</h4>
-          <ul className="collapsible" data-collapsible="expandable">
+          <h5 id="work-experiences" className="section scrollspy">Work Experiences</h5>
+          <ul id="work-experiences-collapsible" className="collapsible popout" data-collapsible="accordion">
 
             <li>
               <div className="collapsible-header">
@@ -285,45 +334,26 @@ export default class Home extends Component {
 
           </ul>
 
-          <h4 id="software-development" className="section scrollspy">Software Development Expertise</h4>
-          <ul className="browser-default">
-            <li>Architecture Planning, Using Best Practices and Production Deployment</li>
-            <li>Integrate systems, internal and external applications to third party APIs</li>
-            <li>Design and develop scalable platform structures</li>
-            <li>Design database structures, horizontal system scaling</li>
-            <li>Create Isomorphic Applications</li>
-            <li>Real-time web application development</li>
-            <li>Native iOS and Android App Development</li>
-            <li>Hybrid Mobile App Development using Apache Cordova</li>
-            <li>Create tools and utilities to automate repetitive tasks</li>
-            <li>Manage Domains and Linux Web Servers</li>
-            <li>Convert PSD files to HTML, image optimizations for Web</li>
-          </ul>
-
-          <h4 id="certifications" className="section scrollspy">Certifications</h4>
-          <table className="bordered centered highlight responsive-table">
+          <h5 id="certifications" className="section scrollspy">Certifications</h5>
+          <table id="certifications-table" className="centered highlight responsive-table">
             <tbody>
               <tr>
                 <td><img src="/static/img/certificates/csharp.gif" alt="C#" /></td>
                 <td><img src="/static/img/certificates/css3.gif" alt="CSS 3" /></td>
                 <td><img src="/static/img/certificates/html5.gif" alt="HTML 5" /></td>
-              </tr>
-              <tr>
                 <td><img src="/static/img/certificates/htmlprogrammer.gif" alt="HTML 4.0" /></td>
                 <td><img src="/static/img/certificates/javascript18.gif" alt="Javascript 1.8" /></td>
-                <td><img src="/static/img/certificates/linuxadministrator.gif" alt="Linux Administration (General)" /></td>
               </tr>
               <tr>
+                <td><img src="/static/img/certificates/linuxadministrator.gif" alt="Linux Administration (General)" /></td>
                 <td><img src="/static/img/certificates/ooconcepts.gif" alt="OO Concepts" /></td>
                 <td><img src="/static/img/certificates/oodesignpatterns.gif" alt="OO Design Patterns" /></td>
                 <td><img src="/static/img/certificates/php5.gif" alt="PHP 5" /></td>
+                <td><img src="/static/img/certificates/php53.gif" alt="PHP 5.3" /></td>
               </tr>
               <tr>
-                <td><img src="/static/img/certificates/php53.gif" alt="PHP 5.3" /></td>
                 <td><img src="/static/img/certificates/php54.gif" alt="PHP 5.4" /></td>
                 <td><img src="/static/img/certificates/php55.gif" alt="PHP 5.5" /></td>
-              </tr>
-              <tr>
                 <td><img src="/static/img/certificates/programmingconcepts.gif" alt="Programming Concepts" /></td>
                 <td><img src="/static/img/certificates/python24.gif" alt="Python 2.4" /></td>
                 <td><img src="/static/img/certificates/rdbmsdeveloper.gif" alt="RDBMS Concepts" /></td>
@@ -332,47 +362,80 @@ export default class Home extends Component {
                 <td><img src="/static/img/certificates/sqlansi.gif" alt="SQL (ANSI)" /></td>
                 <td><img src="/static/img/certificates/visualbasic2008fundamentals.gif" alt="Visual Basic 2008 Fundamentals" /></td>
                 <td><img src="/static/img/certificates/webdesignconcepts.gif" alt="Web Design Concepts" /></td>
-              </tr>
-              <tr>
                 <td><img src="/static/img/certificates/webdevelopmentconcepts.gif" alt="Web Development Concepts" /></td>
-                <td><img src="/static/img/certificates/xhtml11.gif" alt="XHTML 1.1" /></td>
                 <td><img src="/static/img/certificates/webdeveloperbcip.gif" alt="Web Developer (BCIP)" /></td>
               </tr>
             </tbody>
           </table>
 
-          <h4 id="projects" className="section scrollspy">Projects</h4>
-          <ul className="collection">
+          <h5 id="projects" className="section scrollspy">Projects</h5>
+          <ul id="projects-collection" className="collection">
             <li className="collection-item">
-              <a href="http://www.github.com/kurapikats" target="_blank">My Github Projects</a>
+              <a href="http://www.github.com/kurapikats" target="_blank"
+                className="tooltipped" data-tooltip="My Public Source Code Collections">
+                <i class="tiny material-icons right">public</i>
+                My Github Projects
+              </a>
             </li>
             <li className="collection-item">
-              <a href="http://dcman.depedcapiz.ph" target="_blank">DepEd Capiz Document Tracking System</a>
+              <a href="http://dcman.depedcapiz.ph" target="_blank"
+                className="tooltipped" data-tooltip="Department of Education Document Tracker">
+                <i class="tiny material-icons right">public</i>
+                DepEd Capiz Document Tracking System
+              </a>
             </li>
             <li className="collection-item">
-              <a href="https://itunes.apple.com/us/app/acta-medica-ph/id1220666080?mt=8" target="_blank">Acta Medica Philippina IOS App</a>
+              <a href="https://itunes.apple.com/us/app/acta-medica-ph/id1220666080?mt=8" target="_blank"
+                className="tooltipped" data-tooltip="iOS App for Acta PH">
+                <i class="tiny material-icons right">public</i>
+                Acta Medica Philippina IOS App
+              </a>
             </li>
             <li className="collection-item">
-              <a href="https://play.google.com/store/apps/details?id=com.ph.actamedicaphilippina" target="_blank">Acta Medica Philippina Android App</a>
+              <a href="https://play.google.com/store/apps/details?id=com.ph.actamedicaphilippina" target="_blank"
+                className="tooltipped" data-tooltip="Android App for Acta PH">
+                <i class="tiny material-icons right">public</i>
+                Acta Medica Philippina Android App
+              </a>
             </li>
             <li className="collection-item">
-              <a href="http://www.taxicomplaints.net" target="_blank">Taxi Complaints Philippines</a>
+              <a href="http://www.taxicomplaints.net" target="_blank"
+                className="tooltipped" data-tooltip="My personal TaxiComplaints project">
+                <i class="tiny material-icons right">public</i>
+                Taxi Complaints Philippines
+              </a>
             </li>
             <li className="collection-item">
-              <a href="http://www.redwoodhill.com" target="_blank">Redwood Hill Farm & Creamery</a>
+              <a href="http://www.redwoodhill.com" target="_blank"
+                className="tooltipped" data-tooltip="Official Website of Redwood Hill Farm">
+                <i class="tiny material-icons right">public</i>
+                Redwood Hill Farm & Creamery
+              </a>
             </li>
             <li className="collection-item">
-              <a href="http://www.actamedicaphilippina.com.ph" target="_blank">National Health Science Journal</a>
+              <a href="http://www.actamedicaphilippina.com.ph" target="_blank"
+                className="tooltipped" data-tooltip="Official Website of Acta Medica Philpppina">
+                <i class="tiny material-icons right">public</i>
+                National Health Science Journal
+              </a>
             </li>
             <li className="collection-item">
-              <a href="http://www.upm.edu.ph" target="_blank">UP Manila Official Website</a>
+              <a href="http://www.upm.edu.ph" target="_blank"
+                className="tooltipped" data-tooltip="Official website of UPM">
+                <i class="tiny material-icons right">public</i>
+                UP Manila Official Website
+              </a>
             </li>
             <li className="collection-item">
-              <a href="http://crs2.upm.edu.ph" target="_blank">UPM Online Student Registration</a>
+              <a href="http://crs2.upm.edu.ph" target="_blank"
+                className="tooltipped" data-tooltip="UPM Online Student Registration">
+                <i class="tiny material-icons right">public</i>
+                UPM Online Student Registration
+              </a>
             </li>
           </ul>
 
-          <h4 id="character-references" className="section scrollspy">Character References</h4>
+          <h5 id="character-references" className="section scrollspy">Character References</h5>
           <table className="bordered striped highlight">
             <tbody>
               <tr>
@@ -414,7 +477,7 @@ export default class Home extends Component {
             </tbody>
           </table>
 
-          <h4 id="contact" className="section scrollspy">Contact</h4>
+          <h5 id="contact" className="section scrollspy">Contact</h5>
           <div>
             <i className="tiny material-icons brown-text lighten-2">email</i>&nbsp;
             <a href="mailto:jesus.nana@gmail.com" target="_blank" className="brow-text">
@@ -430,6 +493,7 @@ export default class Home extends Component {
           <p className="right" style={{ fontSize: 14 }}>Last update: Jan 6, 2018</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
+          <p>&nbsp;</p>
 
           <div className="fixed-action-btn hide-on-med-and-down">
             <a href="#top" className="btn-floating btn-large brown accent-4 waves-effect">
@@ -441,11 +505,14 @@ export default class Home extends Component {
       </div>
 
       <style jsx>{`
-        h4 {
+        h5 {
           color: #6d4c41
         }
         a {
           color: #4e342e
+        }
+        #projects-collection li, #professional-attributes-ul li, #certifications-table img  {
+          opacity: 0
         }
       `}</style>
     </Fragment>

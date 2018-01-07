@@ -28,18 +28,13 @@ const SideNav = () => (
         </a>
       </li>
       <li>
-        <a href="#technical-skills" className="waves-effect right-align">
-          Technical Skills
+        <a href="#software-development" className="waves-effect right-align">
+          Software Development Expertise
         </a>
       </li>
       <li>
         <a href="#work-experiences" className="waves-effect right-align">
           Work Experiences
-        </a>
-      </li>
-      <li>
-        <a href="#software-development" className="waves-effect right-align">
-          Software Development Expertise
         </a>
       </li>
       <li>
