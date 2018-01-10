@@ -3,6 +3,9 @@ import React, { Component } from 'react'
 class NavBar extends Component {
   componentDidMount() {
     $('.button-collapse').sideNav()
+
+    $('.nav-wrapper .left').addClass('animated fadeInLeft')
+    $('.nav-wrapper .right').addClass('animated fadeInRight')
   }
 
   render() {
@@ -29,6 +32,12 @@ class NavBar extends Component {
             </ul>
           </div>
         </nav>
+
+        <style jsx>{`
+          .nav-wrapper .left, .nav-wrapper .right {
+            opacity: 0
+          }
+        `}</style>
       </div>
     )
   }

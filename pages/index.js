@@ -14,13 +14,14 @@ export default class Home extends Component {
     })
 
     $('.scrollspy').scrollSpy()
-
     $('.collapsible').collapsible()
-
     $('.chips').material_chip()
 
     const scrollFireOptions = [
-      {selector: '#professional-attributes-ul', offset: 0, callback: function(el) {
+      {selector: '#professional-attributes', offset: 0, callback: function(el) {
+        $('#professional-attributes').addClass('animated fadeIn')
+      }},
+      {selector: '#professional-attributes-ul', offset: 100, callback: function(el) {
         Materialize.showStaggeredList($(el));
       }},
       {selector: '#projects-collection', offset: 100, callback: function(el) {
@@ -28,7 +29,25 @@ export default class Home extends Component {
       }},
       {selector: '#certifications-table', offset: 100, callback: function(el) {
         Materialize.fadeInImage('#certifications-table img')
-      }}
+      }},
+      {selector: '.sde', offset: 0, callback: function(el) {
+        $('.sde').addClass('animated fadeIn')
+      }},
+      {selector: '.wec', offset: 100, callback: function(el) {
+        $('.wec').addClass('animated fadeIn')
+      }},
+      {selector: '.cer', offset: 100, callback: function(el) {
+        $('.cer').addClass('animated fadeIn')
+      }},
+      {selector: '.pro', offset: 100, callback: function(el) {
+        $('.pro').addClass('animated fadeIn')
+      }},
+      {selector: '.char', offset: 100, callback: function(el) {
+        $('.char').addClass('animated fadeIn')
+      }},
+      {selector: '.cont', offset: 100, callback: function(el) {
+        $('.cont').addClass('animated fadeIn')
+      }},
     ]
     Materialize.scrollFire(scrollFireOptions)
 
@@ -48,10 +67,11 @@ export default class Home extends Component {
         <title>Jesus B. Nana &raquo; Business App Programmer</title>
         <meta name="description" content="Onin's Official Webpage" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
       </Head>
 
       <NavBar />
@@ -68,20 +88,20 @@ export default class Home extends Component {
             <li>A loyal, team-spirited individual, able to effectively gain confidence of people.</li>
           </ul>
 
-          <h5 id="software-development" className="section scrollspy">Software Development Expertise</h5>
-          <ul className="browser-default">
+          <h5 id="software-development" className="sde section scrollspy">Software Development Expertise</h5>
+          <ul className="sde browser-default">
 
             <li><strong>Job Titles</strong><br/>
-              <div class="chip">Business App Programmer</div>
-              <div class="chip">Web Developer</div>
-              <div class="chip">Android App Developer</div>
-              <div class="chip">iOS App Developer</div>
-              <div class="chip">Mobile App Developer</div>
-              <div class="chip">Backend Developer</div>
-              <div class="chip">Frontend Developer</div>
-              <div class="chip">Web Master</div>
-              <div class="chip">Software Engineer</div>
-              <div class="chip">Computer Programmer</div>
+              <div className="chip">Business App Programmer</div>
+              <div className="chip">Web Developer</div>
+              <div className="chip">Android App Developer</div>
+              <div className="chip">iOS App Developer</div>
+              <div className="chip">Mobile App Developer</div>
+              <div className="chip">Backend Developer</div>
+              <div className="chip">Frontend Developer</div>
+              <div className="chip">Web Master</div>
+              <div className="chip">Software Engineer</div>
+              <div className="chip">Computer Programmer</div>
             </li>
 
             <li><strong>Things I can do</strong><br/>
@@ -101,21 +121,21 @@ export default class Home extends Component {
             </li>
 
             <li><strong>Programming &amp; Scripting</strong><br/>
-              <div class="chip">Javascript (ES2015+)</div>
-              <div class="chip">PHP</div>
-              <div class="chip">Java</div>
-              <div class="chip">Python</div>
-              <div class="chip">SQL</div>
+              <div className="chip">Javascript (ES2015+)</div>
+              <div className="chip">PHP</div>
+              <div className="chip">Java</div>
+              <div className="chip">Python</div>
+              <div className="chip">SQL</div>
             </li>
 
             <li><strong>Methodologies</strong><br/>
-              <div class="chip">Functional</div>
-              <div class="chip">OOP</div>
-              <div class="chip">Design Patterns</div>
-              <div class="chip">UML</div>
-              <div class="chip">Waterfall</div>
-              <div class="chip">Agile</div>
-              <div class="chip">Scrum</div>
+              <div className="chip">Functional</div>
+              <div className="chip">OOP</div>
+              <div className="chip">Design Patterns</div>
+              <div className="chip">UML</div>
+              <div className="chip">Waterfall</div>
+              <div className="chip">Agile</div>
+              <div className="chip">Scrum</div>
             </li>
 
             <li><strong>Frameworks, Libraries, Tools &amp; Technologies</strong>
@@ -132,29 +152,29 @@ export default class Home extends Component {
             </li>
 
             <li><strong>Operating Systems</strong><br/>
-              <div class="chip">Linux (Debian, Centos)</div>
-              <div class="chip">FreeBSD</div>
-              <div class="chip">MSWindows</div>
-              <div class="chip">MacOSX</div>
+              <div className="chip">Linux (Debian, Centos)</div>
+              <div className="chip">FreeBSD</div>
+              <div className="chip">MSWindows</div>
+              <div className="chip">MacOSX</div>
             </li>
 
             <li><strong>Databases</strong><br/>
-              <div class="chip">MySQL</div>
-              <div class="chip">MariaDB</div>
-              <div class="chip">MongoDB</div>
-              <div class="chip">PostgreSQL</div>
+              <div className="chip">MySQL</div>
+              <div className="chip">MariaDB</div>
+              <div className="chip">MongoDB</div>
+              <div className="chip">PostgreSQL</div>
             </li>
 
             <li><strong>Others</strong><br/>
-              <div class="chip">Hardware Troubleshooting</div>
-              <div class="chip">Software Troubleshooting</div>
-              <div class="chip">Router</div>
-              <div class="chip">LAN Management</div>
+              <div className="chip">Hardware Troubleshooting</div>
+              <div className="chip">Software Troubleshooting</div>
+              <div className="chip">Router</div>
+              <div className="chip">LAN Management</div>
             </li>
           </ul>
 
-          <h5 id="work-experiences" className="section scrollspy">Work Experiences</h5>
-          <ul id="work-experiences-collapsible" className="collapsible popout" data-collapsible="accordion">
+          <h5 id="work-experiences" className="wec section scrollspy">Work Experiences</h5>
+          <ul id="work-experiences-collapsible" className="wec collapsible popout" data-collapsible="accordion">
 
             <li>
               <div className="collapsible-header">
@@ -334,7 +354,7 @@ export default class Home extends Component {
 
           </ul>
 
-          <h5 id="certifications" className="section scrollspy">Certifications</h5>
+          <h5 id="certifications" className="cer section scrollspy">Certifications</h5>
           <table id="certifications-table" className="centered highlight responsive-table">
             <tbody>
               <tr>
@@ -368,75 +388,75 @@ export default class Home extends Component {
             </tbody>
           </table>
 
-          <h5 id="projects" className="section scrollspy">Projects</h5>
-          <ul id="projects-collection" className="collection">
+          <h5 id="projects" className="pro section scrollspy">Projects</h5>
+          <ul id="projects-collection" className="pro collection">
             <li className="collection-item">
               <a href="http://www.github.com/kurapikats" target="_blank"
                 className="tooltipped" data-tooltip="My Public Source Code Collections">
-                <i class="tiny material-icons right">public</i>
+                <i className="tiny material-icons right">public</i>
                 My Github Projects
               </a>
             </li>
             <li className="collection-item">
               <a href="http://dcman.depedcapiz.ph" target="_blank"
                 className="tooltipped" data-tooltip="Department of Education Document Tracker">
-                <i class="tiny material-icons right">public</i>
+                <i className="tiny material-icons right">public</i>
                 DepEd Capiz Document Tracking System
               </a>
             </li>
             <li className="collection-item">
               <a href="https://itunes.apple.com/us/app/acta-medica-ph/id1220666080?mt=8" target="_blank"
                 className="tooltipped" data-tooltip="iOS App for Acta PH">
-                <i class="tiny material-icons right">public</i>
+                <i className="tiny material-icons right">public</i>
                 Acta Medica Philippina IOS App
               </a>
             </li>
             <li className="collection-item">
               <a href="https://play.google.com/store/apps/details?id=com.ph.actamedicaphilippina" target="_blank"
                 className="tooltipped" data-tooltip="Android App for Acta PH">
-                <i class="tiny material-icons right">public</i>
+                <i className="tiny material-icons right">public</i>
                 Acta Medica Philippina Android App
               </a>
             </li>
             <li className="collection-item">
               <a href="http://www.taxicomplaints.net" target="_blank"
                 className="tooltipped" data-tooltip="My personal TaxiComplaints project">
-                <i class="tiny material-icons right">public</i>
+                <i className="tiny material-icons right">public</i>
                 Taxi Complaints Philippines
               </a>
             </li>
             <li className="collection-item">
               <a href="http://www.redwoodhill.com" target="_blank"
                 className="tooltipped" data-tooltip="Official Website of Redwood Hill Farm">
-                <i class="tiny material-icons right">public</i>
+                <i className="tiny material-icons right">public</i>
                 Redwood Hill Farm & Creamery
               </a>
             </li>
             <li className="collection-item">
               <a href="http://www.actamedicaphilippina.com.ph" target="_blank"
                 className="tooltipped" data-tooltip="Official Website of Acta Medica Philpppina">
-                <i class="tiny material-icons right">public</i>
+                <i className="tiny material-icons right">public</i>
                 National Health Science Journal
               </a>
             </li>
             <li className="collection-item">
               <a href="http://www.upm.edu.ph" target="_blank"
                 className="tooltipped" data-tooltip="Official website of UPM">
-                <i class="tiny material-icons right">public</i>
+                <i className="tiny material-icons right">public</i>
                 UP Manila Official Website
               </a>
             </li>
             <li className="collection-item">
               <a href="http://crs2.upm.edu.ph" target="_blank"
                 className="tooltipped" data-tooltip="UPM Online Student Registration">
-                <i class="tiny material-icons right">public</i>
+                <i className="tiny material-icons right">public</i>
                 UPM Online Student Registration
               </a>
             </li>
           </ul>
 
-          <h5 id="character-references" className="section scrollspy">Character References</h5>
-          <table className="bordered striped highlight">
+          <h5 id="character-references" className="char section scrollspy">Character References</h5>
+          <table className="char bordered striped highlight">
             <tbody>
               <tr>
                 <td>
@@ -477,26 +497,26 @@ export default class Home extends Component {
             </tbody>
           </table>
 
-          <h5 id="contact" className="section scrollspy">Contact</h5>
-          <div>
+          <h5 id="contact" className="cont section scrollspy">Contact</h5>
+          <div className="cont">
             <i className="tiny material-icons brown-text lighten-2">email</i>&nbsp;
             <a href="mailto:jesus.nana@gmail.com" target="_blank" className="brow-text">
               jesus.nana@gmail.com
             </a>
           </div>
-          <div>
+          <div className="cont">
             <i className="tiny material-icons brown-text lighten-2">phone</i>&nbsp;
             <span className="brown-text">+63 908 215 0659</span>
           </div>
 
-          <p className="center">* * *</p>
-          <p className="right" style={{ fontSize: 14 }}>Last update: Jan 6, 2018</p>
+          <p className="center cont">* * *</p>
+          <p className="right cont" style={{ fontSize: 14 }}>Last update: Jan 10, 2018</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
 
           <div className="fixed-action-btn hide-on-med-and-down">
-            <a href="#top" className="btn-floating btn-large brown accent-4 waves-effect">
+            <a href="#top" className="animated slideInUp btn-floating btn-large brown accent-4 waves-effect">
               <i className="large material-icons">arrow_drop_up</i>
             </a>
           </div>
@@ -511,7 +531,7 @@ export default class Home extends Component {
         a {
           color: #4e342e
         }
-        #projects-collection li, #professional-attributes-ul li, #certifications-table img  {
+        .nav-wrapper .left, .nav-wrapper .right, .sde, .cont, .scrollspy, #projects-collection li, #professional-attributes-ul li, #certifications-table img  {
           opacity: 0
         }
       `}</style>
