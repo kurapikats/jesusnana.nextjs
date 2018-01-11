@@ -18,7 +18,7 @@ export default class Home extends Component {
     $('.chips').material_chip()
 
     const scrollFireOptions = [
-      {selector: '#professional-attributes', offset: 0, callback: function(el) {
+      {selector: '#professional-attributes', offset: 100, callback: function(el) {
         $('#professional-attributes').addClass('animated fadeIn')
       }},
       {selector: '#professional-attributes-ul', offset: 100, callback: function(el) {
@@ -79,14 +79,6 @@ export default class Home extends Component {
 
       <div className="row">
         <div className="col s12">
-          <h5 id="professional-attributes" className="section scrollspy">Professional Attributes</h5>
-          <ul id="professional-attributes-ul" className="browser-default">
-            <li>Devoted learner; have insatiable appetite to gain and apply new knowledge.</li>
-            <li>A high-energy, enthusiastic and dependable individual who excels in challenging and competitive environments.</li>
-            <li>Proven ability to work independently, competent in setting priorities, handle simultaneous projects, and meet deadlines.</li>
-            <li>Proven effective and versatile skills in problem solving.</li>
-            <li>A loyal, team-spirited individual, able to effectively gain confidence of people.</li>
-          </ul>
 
           <h5 id="software-development" className="sde section scrollspy">Software Development Expertise</h5>
           <ul className="sde browser-default">
@@ -171,6 +163,15 @@ export default class Home extends Component {
               <div className="chip">Router</div>
               <div className="chip">LAN Management</div>
             </li>
+          </ul>
+
+          <h5 id="professional-attributes" className="section scrollspy">Professional Attributes</h5>
+          <ul id="professional-attributes-ul" className="browser-default">
+            <li>Devoted learner; have insatiable appetite to gain and apply new knowledge.</li>
+            <li>A high-energy, enthusiastic and dependable individual who excels in challenging and competitive environments.</li>
+            <li>Proven ability to work independently, competent in setting priorities, handle simultaneous projects, and meet deadlines.</li>
+            <li>Proven effective and versatile skills in problem solving.</li>
+            <li>A loyal, team-spirited individual, able to effectively gain confidence of people.</li>
           </ul>
 
           <h5 id="work-experiences" className="wec section scrollspy">Work Experiences</h5>
@@ -510,7 +511,7 @@ export default class Home extends Component {
           </div>
 
           <p className="center cont">* * *</p>
-          <p className="right cont" style={{ fontSize: 14 }}>Last update: Jan 10, 2018</p>
+          <p className="right cont" style={{ fontSize: 14 }}>Last update: Jan 11, 2018</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
