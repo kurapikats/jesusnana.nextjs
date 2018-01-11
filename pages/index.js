@@ -518,7 +518,7 @@ export default class Home extends Component {
 
           <div className="fixed-action-btn hide-on-med-and-down">
             <a href="#top" className="animated slideInUp btn-floating btn-large brown accent-4 waves-effect">
-              <i className="large material-icons">arrow_drop_up</i>
+              <i className="large material-icons">arrow_upward</i>
             </a>
           </div>
 
