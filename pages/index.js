@@ -218,7 +218,7 @@ export default class Home extends Component {
             <li>
               <div className="collapsible-header">
                 <div className="col s9">
-                  <strong>AdGent Digital - Senior Software Developer</strong>
+                  <strong>StrikeVideo / AdGent Digital - Senior Software Developer</strong>
                 </div>
                 <div className="col s3 right-align">[ 2010 - 2015 ]</div>
               </div>
@@ -302,7 +302,7 @@ export default class Home extends Component {
             <li>
               <div className="collapsible-header">
                 <div className="col s9">
-                  <strong>Digital Media Exchange - Web Developer</strong>
+                  <strong>Digital Media Exchange (Mobius Games) - Web Developer</strong>
                 </div>
                 <div className="col s3 right-align">[ 2006 - 2008 ]</div>
               </div>
@@ -484,7 +484,7 @@ export default class Home extends Component {
                   </a>
                 </td>
                 <td>Chief Technology Officer</td>
-                <td>Digital Media Exchange (Mobius)</td>
+                <td>Digital Media Exchange (Mobius Games)</td>
               </tr>
               <tr>
                 <td>
