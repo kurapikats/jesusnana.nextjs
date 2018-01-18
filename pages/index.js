@@ -98,7 +98,7 @@ export default class Home extends Component {
 
             <li><strong>Things I can do</strong><br/>
               <ul className="browser-default">
-                <li>Architecture Planning, Using Best Practices and Production Deployment</li>
+                <li>Architecture Planning, Use Best Practices and Production Deployment</li>
                 <li>Integrate systems, internal and external applications to third party APIs</li>
                 <li>Design and develop scalable platform structures</li>
                 <li>Design database structures, horizontal system scaling</li>
