@@ -511,7 +511,7 @@ export default class Home extends Component {
           </div>
 
           <p className="center cont">* * *</p>
-          <p className="right cont" style={{ fontSize: 14 }}>Last update: Jan 11, 2018</p>
+          <p className="right cont" style={{ fontSize: 14 }}>Last update: Jan 22, 2018</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
