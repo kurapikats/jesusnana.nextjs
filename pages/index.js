@@ -132,9 +132,9 @@ export default class Home extends Component {
 
             <li><strong>Frameworks, Libraries, Tools &amp; Technologies</strong>
               <ul className="browser-default">
-                <li>Redux, NativeScript, MeteorJs, MantraJs, ReactJs, Laravel, Twitter Bootstrap, JQuery, Drupal</li>
+                <li>NodeJs, Redux, NativeScript, MeteorJs, MantraJs, ReactJs, Laravel, JQuery, Drupal</li>
                 <li>Nginx, Apache, Lighttpd, SSH, XAMPP, Atom, Vim, VSCode, HTML5, Smarty, Material Design</li>
-                <li>Git, Subversion, tmux, Firefox and Firebug, LESS, Google Search and APIs</li>
+                <li>Git, Subversion, tmux, Firefox and Firebug, LESS, Twitter Bootstrap, Google Search and APIs</li>
                 <li>npm, yarn, PEAR, PECL, Doctrine, Composer, Bower, Memcached</li>
                 <li>XML, SOAP, REST, WAP, GSM-SMS, AJAX, Web2.0, Modernizr</li>
                 <li>Appnexus API, Selenium, PHPUnit, Browserify, Webpack</li>
@@ -511,7 +511,7 @@ export default class Home extends Component {
           </div>
 
           <p className="center cont">* * *</p>
-          <p className="right cont" style={{ fontSize: 14 }}>Last update: Jan 22, 2018</p>
+          <p className="right cont" style={{ fontSize: 14 }}>Last update: Jan 26, 2018</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
