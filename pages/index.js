@@ -264,7 +264,6 @@ export default class Home extends Component {
                 <div className="chip">LAN Management</div>
               </li>
             </ul>
-
             <h5 id="professional-attributes" className="section scrollspy">
               Professional Attributes
             </h5>
@@ -287,7 +286,6 @@ export default class Home extends Component {
                 confidence of people.
               </li>
             </ul>
-
             <h5 id="work-experiences" className="wec section scrollspy">
               Work Experiences
             </h5>
@@ -303,7 +301,7 @@ export default class Home extends Component {
                       PrimaCard Philippines - Senior Software Engineer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[ 2017 ]</div>
+                  <div className="col s3 right-align">[2017]</div>
                 </div>
 
                 <div className="collapsible-body">
@@ -349,7 +347,7 @@ export default class Home extends Component {
                       Metrobank Philippines - Senior Software Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[ 2016 ]</div>
+                  <div className="col s3 right-align">[2016]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -368,7 +366,7 @@ export default class Home extends Component {
                       StrikeVideo / AdGent Digital - Senior Software Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[ 2010 - 2015 ]</div>
+                  <div className="col s3 right-align">[2010 - 2015]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -396,7 +394,7 @@ export default class Home extends Component {
                       ModelWorks Philippines - Senior Full-Stack Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[ 2009 - 2010 ]</div>
+                  <div className="col s3 right-align">[2009 - 2010]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -411,7 +409,7 @@ export default class Home extends Component {
                   <div className="col s9">
                     <strong>Gameloft Philippines - Senior PHP Developer</strong>
                   </div>
-                  <div className="col s3 right-align">[ 2009 ]</div>
+                  <div className="col s3 right-align">[2009]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -428,7 +426,7 @@ export default class Home extends Component {
                       AmPhil Technologies Inc. - Senior Web Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[ 2009 ]</div>
+                  <div className="col s3 right-align">[2009]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -453,7 +451,7 @@ export default class Home extends Component {
                       Monark Customs Brokerage - Lead Web Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[ 2008 - 2009 ]</div>
+                  <div className="col s3 right-align">[2008 - 2009]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -471,7 +469,7 @@ export default class Home extends Component {
                       Digital Media Exchange (Mobius Games) - Web Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[ 2006 - 2008 ]</div>
+                  <div className="col s3 right-align">[2006 - 2008]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -511,7 +509,7 @@ export default class Home extends Component {
                       University of the Philippines - Junior Web Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[ 2004 - 2006 ]</div>
+                  <div className="col s3 right-align">[2004 - 2006]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -537,7 +535,7 @@ export default class Home extends Component {
                       Support Engineer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[ 2000 - 2004 ]</div>
+                  <div className="col s3 right-align">[2000 - 2004]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -556,7 +554,6 @@ export default class Home extends Component {
                 </div>
               </li>
             </ul>
-
             <h5 id="certifications" className="cer section scrollspy">
               Certifications
             </h5>
@@ -686,7 +683,6 @@ export default class Home extends Component {
                 </tr>
               </tbody>
             </table>
-
             <h5 id="projects" className="pro section scrollspy">
               Projects
             </h5>
@@ -791,7 +787,6 @@ export default class Home extends Component {
                 </a>
               </li>
             </ul>
-
             <h5 id="character-references" className="char section scrollspy">
               Character References
             </h5>
@@ -847,7 +842,6 @@ export default class Home extends Component {
                 </tr>
               </tbody>
             </table>
-
             <h5 id="contact" className="cont section scrollspy">
               Contact
             </h5>
@@ -868,12 +862,11 @@ export default class Home extends Component {
 
             <p className="center cont">* * *</p>
             <p className="right cont" style={{ fontSize: 14 }}>
-              Last update: Jan 26, 2018
+              Last update: Feb 1, 2018
             </p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-
             <div className="fixed-action-btn hide-on-med-and-down">
               <a
                 href="#top"
