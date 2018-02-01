@@ -1,23 +1,25 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
 
 const SideNav = () => (
   <Fragment>
     <ul id="slide-out" className="side-nav">
       <li>
         <div className="user-view">
-          <div className="background bg">
-            &nbsp;
-          </div>
+          <div className="background bg">&nbsp;</div>
           <a href="#!user">
-            <img className="circle" src="/static/img/onin-profile-pic.jpg" alt="Onin" />
+            <img
+              className="circle"
+              src="/static/img/onin-profile-pic.jpg"
+              alt="Onin"
+            />
           </a>
           <a href="#!name">
-            <span className="white-text name">Jesus B. Nana (0908 215 0659)</span>
+            <span className="white-text name">
+              Jesus B. Nana (0908 215 0659)
+            </span>
           </a>
           <a href="#!email">
-            <span className="white-text email">
-              jesus.nana@gmail.com
-            </span>
+            <span className="white-text email">jesus.nana@gmail.com</span>
           </a>
         </div>
       </li>
@@ -61,20 +63,43 @@ const SideNav = () => (
           Contact
         </a>
       </li>
+      <li>
+        <a
+          target="_blank"
+          href="/static/Jesus_B._Nana_-_CV.pdf"
+          className="waves-effect right-align"
+        >
+          <i className="material-icons left hide-on-med-and-down">
+            file_download
+          </i>
+          Download in PDF Format
+        </a>
+      </li>
     </ul>
     <style jsx>{`
       .bg {
-        background-color:#5d4037;
-        background-image:
-        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-        radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+        background-color: #5d4037;
+        background-image: radial-gradient(
+            white,
+            rgba(255, 255, 255, 0.2) 2px,
+            transparent 40px
+          ),
+          radial-gradient(
+            white,
+            rgba(255, 255, 255, 0.15) 1px,
+            transparent 30px
+          ),
+          radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+          radial-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.1) 2px,
+            transparent 30px
+          );
         background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
         background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
       }
     `}</style>
   </Fragment>
-)
+);
 
-export default SideNav
+export default SideNav;
