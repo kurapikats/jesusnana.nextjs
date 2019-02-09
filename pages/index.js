@@ -186,9 +186,9 @@ export default class Home extends Component {
                 <strong>Programming &amp; Scripting</strong>
                 <br />
                 <div className="chip">Javascript (ES2015+)</div>
-                <div className="chip">PHP</div>
-                <div className="chip">Java</div>
                 <div className="chip">Python</div>
+                <div className="chip">Java</div>
+                <div className="chip">PHP</div>
                 <div className="chip">SQL</div>
               </li>
 
@@ -208,7 +208,7 @@ export default class Home extends Component {
                 <strong>Frameworks, Libraries, Tools &amp; Technologies</strong>
                 <ul className="browser-default">
                   <li>
-                    NodeJs, Redux, NativeScript, MeteorJs, MantraJs, ReactJs,
+                    NodeJs, MobX, NativeScript, MeteorJs, MantraJs, ReactJs,
                     Laravel, JQuery, Drupal
                   </li>
                   <li>
@@ -298,10 +298,35 @@ export default class Home extends Component {
                 <div className="collapsible-header">
                   <div className="col s9">
                     <strong>
+                      IDOOH Philippines - Senior Backend Engineer
+                    </strong>
+                  </div>
+                  <div className="col s3 right-align">[ 2018 - 2019 ]</div>
+                </div>
+
+                <div className="collapsible-body">
+                  <ul className="browser-default">
+                    <li>
+                      Planned and designed Content Management System (CMS) Services
+                    </li>
+                    <li>
+                      Developed User authentication and authorization using JSON Web Tokens (JWT)
+                    </li>
+                    <li>
+                      Developed GraphQL Schemes and API Endpoints
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            
+              <li>
+                <div className="collapsible-header">
+                  <div className="col s9">
+                    <strong>
                       PrimaCard Philippines - Senior Software Engineer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[2017]</div>
+                  <div className="col s3 right-align">[ 2016 - 2017 ]</div>
                 </div>
 
                 <div className="collapsible-body">
@@ -344,29 +369,10 @@ export default class Home extends Component {
                 <div className="collapsible-header">
                   <div className="col s9">
                     <strong>
-                      Metrobank Philippines - Senior Software Developer
-                    </strong>
-                  </div>
-                  <div className="col s3 right-align">[2016]</div>
-                </div>
-                <div className="collapsible-body">
-                  <ul className="browser-default">
-                    <li>
-                      Developed Internal Content Management System called
-                      "Insights"
-                    </li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <div className="collapsible-header">
-                  <div className="col s9">
-                    <strong>
                       StrikeVideo / AdGent Digital - Senior Software Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[2010 - 2015]</div>
+                  <div className="col s3 right-align">[ 2010 - 2015 ]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -394,7 +400,7 @@ export default class Home extends Component {
                       ModelWorks Philippines - Senior Full-Stack Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[2009 - 2010]</div>
+                  <div className="col s3 right-align">[ 2009 - 2010 ]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -407,51 +413,11 @@ export default class Home extends Component {
               <li>
                 <div className="collapsible-header">
                   <div className="col s9">
-                    <strong>Gameloft Philippines - Senior PHP Developer</strong>
-                  </div>
-                  <div className="col s3 right-align">[2009]</div>
-                </div>
-                <div className="collapsible-body">
-                  <ul className="browser-default">
-                    <li>Developed in-house Time Attendance System</li>
-                    <li>Bug fixing of existing internal office tools</li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <div className="collapsible-header">
-                  <div className="col s9">
-                    <strong>
-                      AmPhil Technologies Inc. - Senior Web Developer
-                    </strong>
-                  </div>
-                  <div className="col s3 right-align">[2009]</div>
-                </div>
-                <div className="collapsible-body">
-                  <ul className="browser-default">
-                    <li>
-                      Developed CMS for Drag Racing Social Networking
-                      DragFools.com
-                    </li>
-                    <li>
-                      Developed Personalized Legal Services Online
-                      LawFirmAtHome.com
-                    </li>
-                    <li>Data mining and site scraping</li>
-                    <li>Maintenance of Company website amphiltech.com</li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <div className="collapsible-header">
-                  <div className="col s9">
                     <strong>
                       Monark Customs Brokerage - Lead Web Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[2008 - 2009]</div>
+                  <div className="col s3 right-align">[ 2008 - 2009 ]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -469,7 +435,7 @@ export default class Home extends Component {
                       Digital Media Exchange (Mobius Games) - Web Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[2006 - 2008]</div>
+                  <div className="col s3 right-align">[ 2006 - 2008 ]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -509,7 +475,7 @@ export default class Home extends Component {
                       University of the Philippines - Junior Web Developer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[2004 - 2006]</div>
+                  <div className="col s3 right-align">[ 2004 - 2006 ]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -535,7 +501,7 @@ export default class Home extends Component {
                       Support Engineer
                     </strong>
                   </div>
-                  <div className="col s3 right-align">[2000 - 2004]</div>
+                  <div className="col s3 right-align">[ 2000 - 2004 ]</div>
                 </div>
                 <div className="collapsible-body">
                   <ul className="browser-default">
@@ -577,24 +543,18 @@ export default class Home extends Component {
                   </td>
                   <td>
                     <img
-                      src="/static/img/certificates/htmlprogrammer.gif"
-                      alt="HTML 4.0"
-                    />
-                  </td>
-                  <td>
-                    <img
                       src="/static/img/certificates/javascript18.gif"
                       alt="Javascript 1.8"
                     />
                   </td>
-                </tr>
-                <tr>
                   <td>
                     <img
                       src="/static/img/certificates/linuxadministrator.gif"
                       alt="Linux Administration (General)"
                     />
                   </td>
+                </tr>
+                <tr>
                   <td>
                     <img
                       src="/static/img/certificates/ooconcepts.gif"
@@ -608,26 +568,9 @@ export default class Home extends Component {
                     />
                   </td>
                   <td>
-                    <img src="/static/img/certificates/php5.gif" alt="PHP 5" />
-                  </td>
-                  <td>
                     <img
-                      src="/static/img/certificates/php53.gif"
-                      alt="PHP 5.3"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      src="/static/img/certificates/php54.gif"
-                      alt="PHP 5.4"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="/static/img/certificates/php55.gif"
-                      alt="PHP 5.5"
+                      src="/static/img/certificates/php56.gif"
+                      alt="PHP 5.6"
                     />
                   </td>
                   <td>
@@ -642,24 +585,18 @@ export default class Home extends Component {
                       alt="Python 2.4"
                     />
                   </td>
+                </tr>
+                <tr>
                   <td>
                     <img
                       src="/static/img/certificates/rdbmsdeveloper.gif"
                       alt="RDBMS Concepts"
                     />
                   </td>
-                </tr>
-                <tr>
                   <td>
                     <img
                       src="/static/img/certificates/sqlansi.gif"
                       alt="SQL (ANSI)"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="/static/img/certificates/visualbasic2008fundamentals.gif"
-                      alt="Visual Basic 2008 Fundamentals"
                     />
                   </td>
                   <td>
@@ -862,7 +799,7 @@ export default class Home extends Component {
 
             <p className="center cont">* * *</p>
             <p className="right cont" style={{ fontSize: 14 }}>
-              Last update: Feb 1, 2018
+              Last Updated on Feb. 9, 2019
             </p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
