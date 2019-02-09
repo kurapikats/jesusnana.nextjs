@@ -170,6 +170,7 @@ export default class Home extends Component {
                   <li>Design database structures, horizontal system scaling</li>
                   <li>Create Isomorphic Applications</li>
                   <li>Real-time web application development</li>
+                  <li>Design and develop e-commerce systems</li>
                   <li>Native iOS and Android App Development</li>
                   <li>Hybrid Mobile App Development using Apache Cordova</li>
                   <li>
@@ -177,7 +178,7 @@ export default class Home extends Component {
                   </li>
                   <li>Manage Domains and Linux Web Servers</li>
                   <li>
-                    Convert PSD files to HTML, image optimizations for Web
+                    Convert Photoshop PSD files to HTML, image optimizations for Web
                   </li>
                 </ul>
               </li>
@@ -200,6 +201,7 @@ export default class Home extends Component {
                 <div className="chip">Design Patterns</div>
                 <div className="chip">UML</div>
                 <div className="chip">Waterfall</div>
+                <div className="chip">Kanban</div>
                 <div className="chip">Agile</div>
                 <div className="chip">Scrum</div>
               </li>
@@ -223,7 +225,7 @@ export default class Home extends Component {
                     npm, yarn, PEAR, PECL, Doctrine, Composer, Bower, Memcached
                   </li>
                   <li>
-                    XML, SOAP, REST, WAP, GSM-SMS, AJAX, Web2.0, Modernizr
+                  Apollo, GraphQL, XML, SOAP, REST, WAP, GSM-SMS, AJAX, Web2.0, Modernizr, JWT
                   </li>
                   <li>Appnexus API, Selenium, PHPUnit, Browserify, Webpack</li>
                   <li>
@@ -327,6 +329,10 @@ export default class Home extends Component {
                     <li>
                       Integrate Standard Code formatter and Linter
                     </li>
+                    <li>Created unit tests on backend modules</li>
+                    <li>
+                      Maintenance and bug fixing on old platform (v1)
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -408,7 +414,7 @@ export default class Home extends Component {
                 <div className="collapsible-header">
                   <div className="col s9">
                     <strong>
-                      ModelWorks Philippines - Senior Full-Stack Developer
+                      ModelWorks Philippines - Senior Full Stack Developer
                     </strong>
                   </div>
                   <div className="col s3 right-align">[ 2009 - 2010 ]</div>
@@ -499,7 +505,7 @@ export default class Home extends Component {
                       PostgreSQL
                     </li>
                     <li>Created custom mass mailer notification system</li>
-                    <li>Update and maintain UPM official website</li>
+                    <li>Update and maintain UPM official websites</li>
                   </ul>
                 </div>
               </li>
@@ -751,18 +757,6 @@ export default class Home extends Component {
                   </td>
                   <td>Technical Lead</td>
                   <td>IDOOH Philippines</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://www.metrobank.com.ph/contact_us.asp"
-                      target="_blank"
-                    >
-                      <strong>Anthony Zamora</strong>
-                    </a>
-                  </td>
-                  <td>Director (Innovations Dept.)</td>
-                  <td>Metrobank Main Office Philippines</td>
                 </tr>
                 <tr>
                   <td>
