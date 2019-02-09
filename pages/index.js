@@ -102,8 +102,8 @@ export default class Home extends Component {
     return (
       <Fragment>
         <Head>
-          <meta charset="utf-8" />
-          <meta http-equiv="x-ua-compatible" content="ie=edge" />
+          <meta charSet="utf-8" />
+          <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <title>Jesus B. Nana &raquo; Business App Programmer</title>
           <meta name="description" content="Onin's Official Webpage" />
           <meta
@@ -125,7 +125,7 @@ export default class Home extends Component {
           <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js" />
           <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
           />
         </Head>
 
@@ -732,6 +732,18 @@ export default class Home extends Component {
                 <tr>
                   <td>
                     <a
+                      href="http://www.idooh.com/contact-us.html"
+                      target="_blank"
+                    >
+                      <strong>Dondi Imperial</strong>
+                    </a>
+                  </td>
+                  <td>Technical Lead</td>
+                  <td>IDOOH Philippines</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
                       href="https://www.metrobank.com.ph/contact_us.asp"
                       target="_blank"
                     >
@@ -794,7 +806,7 @@ export default class Home extends Component {
             </div>
             <div className="cont">
               <i className="tiny material-icons brown-text lighten-2">phone</i>&nbsp;
-              <span className="brown-text">+63 908 215 0659</span>
+              <span className="brown-text">+63 995 643 3610</span>
             </div>
 
             <p className="center cont">* * *</p>
