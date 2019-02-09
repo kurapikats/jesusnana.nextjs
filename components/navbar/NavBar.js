@@ -15,7 +15,7 @@ class NavBar extends Component {
           <div className="nav-wrapper brown">
             <a href="#top" className="brand-logo left waves-effect" style={{ marginLeft: 10 }}>
               Jesus B. Nana
-              <span className="hide-on-med-and-down">&nbsp;&raquo; Business App Programmer</span>
+              <span className="hide-on-med-and-down">&nbsp;&raquo; Full Stack Developer</span>
             </a>
             <ul className="right">
               <li>

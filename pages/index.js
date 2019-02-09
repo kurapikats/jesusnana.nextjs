@@ -95,7 +95,7 @@ export default class Home extends Component {
     ReactGA.set({ page: window.location.pathname });
     ReactGA.pageview(window.location.pathname);
 
-    Materialize.toast(`Hello Friend! Welcome to my webpage.‎`, 3500);
+    Materialize.toast(`HI THERE! WELCOME TO MY PERSONAL PORTFOLIO`, 3500);
   }
 
   render() {
@@ -104,7 +104,7 @@ export default class Home extends Component {
         <Head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <title>Jesus B. Nana &raquo; Business App Programmer</title>
+          <title>Jesus B. Nana &raquo; Full Stack Developer</title>
           <meta name="description" content="Onin's Official Webpage" />
           <meta
             name="viewport"
@@ -141,15 +141,15 @@ export default class Home extends Component {
               <li>
                 <strong>Job Titles</strong>
                 <br />
-                <div className="chip">Business App Programmer</div>
+                <div className="chip">Full Stack Developer</div>
+                <div className="chip">Backend Developer</div>
                 <div className="chip">Web Developer</div>
                 <div className="chip">Android App Developer</div>
                 <div className="chip">iOS App Developer</div>
                 <div className="chip">Mobile App Developer</div>
-                <div className="chip">Backend Developer</div>
                 <div className="chip">Frontend Developer</div>
                 <div className="chip">Web Master</div>
-                <div className="chip">Full-Stack Developer</div>
+                <div className="chip">Business App Programmer</div>
                 <div className="chip">Software Engineer</div>
                 <div className="chip">Computer Programmer</div>
               </li>
@@ -260,7 +260,7 @@ export default class Home extends Component {
                 <br />
                 <div className="chip">Hardware Troubleshooting</div>
                 <div className="chip">Software Troubleshooting</div>
-                <div className="chip">Router</div>
+                <div className="chip">Router Management</div>
                 <div className="chip">LAN Management</div>
               </li>
             </ul>
@@ -307,13 +307,25 @@ export default class Home extends Component {
                 <div className="collapsible-body">
                   <ul className="browser-default">
                     <li>
-                      Planned and designed Content Management System (CMS) Services
+                      Planned and designed Content Management System (CMS) Backend Services
                     </li>
                     <li>
-                      Developed User authentication and authorization using JSON Web Tokens (JWT)
+                      Developed User authentication and authorization middlewares
                     </li>
                     <li>
-                      Developed GraphQL Schemes and API Endpoints
+                      Developed GraphQL Schemas (Models) and API Endpoints
+                    </li>
+                    <li>
+                      Developed initialization script for resetting Database
+                    </li>
+                    <li>
+                      Developed Transactions logger module
+                    </li>
+                    <li>
+                      Developed GraphQL Data File Uploader module
+                    </li>
+                    <li>
+                      Integrate Standard Code formatter and Linter
                     </li>
                   </ul>
                 </div>
@@ -332,8 +344,7 @@ export default class Home extends Component {
                 <div className="collapsible-body">
                   <ul className="browser-default">
                     <li>
-                      Planned and designed the whole system for PrimaCard
-                      Platform
+                      Planned and designed the PrimaCard platform
                     </li>
                     <li>
                       Developed backend payment API system in Amazon Web
@@ -506,14 +517,14 @@ export default class Home extends Component {
                 <div className="collapsible-body">
                   <ul className="browser-default">
                     <li>
-                      Troubleshoot Network and Internet connection problem
+                      Linux Server Installation, configuration and management
+                    </li>                  
+                    <li>
+                      Troubleshoot Network and Internet connection problems
                     </li>
                     <li>
                       Hardware, OS Software Installation, Microsoft Office,
                       Adobe Products, etc.
-                    </li>
-                    <li>
-                      Linux Server Installation, configuration and management
                     </li>
                     <li>Hardware and Software maintenance</li>
                   </ul>
@@ -783,11 +794,11 @@ export default class Home extends Component {
                       href="http://www.linkedin.com/in/ericpareja"
                       target="_blank"
                     >
-                      <strong>Eric Pareja</strong>
+                      <strong>Eric Manuel Pareja</strong>
                     </a>
                   </td>
-                  <td>Network Administrator</td>
-                  <td>University of the Philippines Manila</td>
+                  <td>Chief Technology Officer</td>
+                  <td>UPM National Telehealth Center</td>
                 </tr>
               </tbody>
             </table>
@@ -811,7 +822,7 @@ export default class Home extends Component {
 
             <p className="center cont">* * *</p>
             <p className="right cont" style={{ fontSize: 14 }}>
-              Last Updated on Feb. 9, 2019
+              Last Updated on Feb. 10, 2019
             </p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>

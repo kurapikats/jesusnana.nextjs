@@ -15,7 +15,7 @@ const SideNav = () => (
           </a>
           <a href="#!name">
             <span className="white-text name">
-              Jesus B. Nana (0908 215 0659)
+              Jesus B. Nana (0995 643 3610)
             </span>
           </a>
           <a href="#!email">
@@ -48,11 +48,6 @@ const SideNav = () => (
           Projects
         </a>
       </li>
-      {/* <li>
-        <a href="#educational-attainments" className="waves-effect right-align">
-          Educational Attainments
-        </a>
-      </li> */}
       <li>
         <a href="#character-references" className="waves-effect right-align">
           Character References
