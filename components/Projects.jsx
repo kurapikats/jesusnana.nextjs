@@ -69,7 +69,7 @@ const Projects = () => (
           data-tooltip="Official Website of Redwood Hill Farm"
         >
           <i className="tiny material-icons right">public</i>
-          Redwood Hill Farm & Creamery
+          Redwood Hill Farm &amp; Creamery
         </a>
       </li>
       <li className="collection-item">
